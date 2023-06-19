@@ -1,0 +1,527 @@
+:root{
+    --title: 'Montserrat', sans-serif;
+    --sub-title: 'Roboto', sans-serif;
+    --text: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #080808 !important;
+  }
+  
+a {
+    font-family: var(--text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------- NAVBAR ------------------------------- */
+
+.navbar-nav li a {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.link {
+    user-select: none;
+}
+
+.navbar-nav {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.nav-phone {
+    display: none;
+}
+
+a {
+    font-family: var(--text);
+    transition: background-color 0.3s ease;
+}
+
+/* .active {
+    padding: 5px 10px;
+    background-color: rgba(180, 173, 173, 0.3);
+    border-radius: 30px;
+} */
+
+.nav-icon ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.icon-nav {
+    margin: 0 20px;
+}
+
+.icon-nav i {
+    font-size: 25px;
+    color: rgb(179, 176, 176);
+    transition: 0.3s ease-in;
+}
+
+.icon-nav i:hover {
+    color: #674188;
+    font-size: 35px;
+    transition: 0.3s ease-in;
+}
+
+.nav-icon {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    z-index: 100;
+}
+
+
+
+/* ------------------------------- HOME PAGE ------------------------------- */
+
+
+#home {
+    padding-left: 100px;
+}
+
+.intro {
+    width: 70%;
+}
+
+.title {
+    font-family: var(--title);
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 45px;
+
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    text-shadow: 0 0px 10px #8f8888;
+
+}
+
+.subtitle-descr {
+    font-family: var(--title);
+    color: white;
+
+    line-height: 1.5;
+    font-size: 15px;
+
+    padding-bottom: 20px;
+}
+
+.marquee span{
+    font-family: var(--title);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-shadow: 0 0px 10px #8f8888;
+
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 36s linear infinite;
+}
+
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+  
+.marquee2 span {
+    animation-delay: 18s;
+}
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+
+
+
+/* ------------------------------- WORK PAGE ------------------------------- */
+
+#work {
+    padding-top: 120px;
+    padding-left: 100px;
+
+}
+.section-name {
+    color: white;
+    text-shadow: 0 0px 10px #8f8888;
+    font-family: var(--title);
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.project-title {
+    color: white;
+    font-family: var(--title);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.project-desc {
+    color: white;
+    font-family: var(--title);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-card {
+    width: 300px;
+    position: relative;
+}
+
+.img-project {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+
+.img-project {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+    height: 180px;
+}
+
+.project-icon {
+    font-size: 35px;
+    color: #fff;
+    padding-left: 45px;
+    right: 20px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.project-icon:hover {
+    color: #674188;
+    transition: 0.3s ease;
+}
+
+.project-tools {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-family: var(--title);
+}
+
+.lana { 
+    padding-left: 18px;
+}
+
+.links {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 50px;
+    left: 50px;
+}
+
+.project-card:hover .img-project {
+    filter: brightness(15%);
+}
+
+.project-card:hover .links {
+    opacity: 1;
+}
+
+.project-card:hover .project-link {
+    display: block;
+}
+
+div.col {
+    padding-left: 0px;
+}
+
+.body {
+    padding-left: 5px;
+}
+
+/* ------------------------------- NOTES PAGE ------------------------------- */
+
+
+#notes {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.notes-text p{
+    color: white;
+    width: 70%;
+    padding-bottom: 15px;
+    text-align: justify;
+
+    line-height: 1.8;
+    font-family: var(--title);
+}
+
+span.purple {
+    color: #aa7ec4;
+}
+
+.expertise-skills {
+    color: #aa7ec4;
+    width: 50%;
+    line-height: 2;
+}
+
+
+/* ------------------------------- CONTACT PAGE ------------------------------- */
+
+
+#contact {
+    padding-top: 120px;
+}
+
+.contact-card {
+    border: 1px solid white;
+    border-radius: 18px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    padding: 30px 40px;
+}
+
+.contact-sc-name {
+    color: white;
+    text-shadow: 0 0px 10px #8f8888;
+    font-family: var(--title);
+    padding-bottom: 15px;
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.contact-sc-desc {
+    font-family: var(--title);
+    color: white;
+
+    line-height: 1.5;
+    font-size: 15px;
+    width: 95%;
+
+    line-height: 1.5;
+
+}
+
+
+.send-mail-bt {
+    text-decoration: none;
+    color: #000;
+}
+
+.uiverse {
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    padding: 15px;
+
+    
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: var(--title);
+
+    letter-spacing: 2px;
+    
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .uiverse:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  svg:hover span,
+  svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .uiverse:hover,
+  .uiverse:hover .tooltip,
+  .uiverse:hover .tooltip::before {
+    background: linear-gradient(320deg, rgb(67, 32, 100), rgb(103,65,136));
+    color: #ffffff;
+}
+
+
+@media (max-width: 767px) {
+
+    /* ------------------------------ NAVBAR ------------------------------ */
+
+    .nav-icon ul {
+        justify-content: center;
+        margin-right: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        padding-top: 10px;
+
+        font-size: 17px;
+    }
+
+
+    /* ------------------------------ MAIN PAGE ------------------------------ */
+
+    #home{
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .title {
+        padding-top: 110px;
+        font-size: 33px;
+        padding-left: 45px;
+        padding-right: 30px;
+
+        text-shadow: 0 0px 0px #8f8888;
+
+    }
+    .subtitle-descr {
+        padding-left: 45px;
+        font-size: 14px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .marquee2{ 
+        display: none;
+    }
+
+    .marquee {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-name {
+        color: white;
+        text-shadow: 0 0px 0px #8f8888;
+        font-family: var(--title);
+        padding-bottom: 40px;
+        font-weight: bold;
+    }
+    /* ------------------------------ WORK PAGE ------------------------------ */
+
+    #work {
+        margin: 0;
+        padding: 0;
+        padding-left: 45px;
+    }
+
+    .work-section {
+        padding-top: 130px;
+    }
+    
+    .section-name {
+        font-size: 28px;
+    }
+
+    .project-card {
+        margin-bottom: 50px;
+        width: 310px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+
+    }
+
+    /* ------------------------------ NOTES PAGE ------------------------------ */
+    #notes {
+        margin: 0;
+        padding: 0;
+        padding-left: 45px;
+    }
+
+    .notes-section {
+        padding-top: 80px;
+        font-size: 28px;
+    }
+    
+    .notes-text p{
+        font-size: 14px;
+        width: 87%;
+    }
+    
+    .expertise-skills {
+        width: 87%;
+    }
+    /* ------------------------------ CONACT PAGE ------------------------------ */
+
+    .contact-sc-desc {
+        text-align: justify;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+}
